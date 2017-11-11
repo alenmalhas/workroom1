@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="WHOLE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="ENTITY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                <xs:element maxOccurs="unbounded" name="NAME">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="LASTNAME" type="xs:string" />
+                      <xs:element name="FIRSTNAME" type="xs:string" />
+                      <xs:element name="MIDDLENAME" type="xs:string" />
+                      <xs:element name="WHOLENAME" type="xs:string" />
+                      <xs:element name="GENDER" type="xs:string" />
+                      <xs:element name="TITLE" type="xs:string" />
+                      <xs:element name="FUNCTION" type="xs:string" />
+                      <xs:element name="LANGUAGE" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="Entity_id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="legal_basis" type="xs:string" use="required" />
+                    <xs:attribute name="reg_date" type="xs:date" use="required" />
+                    <xs:attribute name="pdf_link" type="xs:string" use="required" />
+                    <xs:attribute name="programme" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="BIRTH">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DATE" type="xs:string" />
+                      <xs:element name="PLACE" type="xs:string" />
+                      <xs:element name="COUNTRY" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="Entity_id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="legal_basis" type="xs:string" use="required" />
+                    <xs:attribute name="reg_date" type="xs:date" use="required" />
+                    <xs:attribute name="pdf_link" type="xs:string" use="required" />
+                    <xs:attribute name="programme" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CITIZEN">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="COUNTRY" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="Entity_id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="legal_basis" type="xs:string" use="required" />
+                    <xs:attribute name="reg_date" type="xs:date" use="required" />
+                    <xs:attribute name="pdf_link" type="xs:string" use="required" />
+                    <xs:attribute name="programme" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="PASSPORT">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="NUMBER" type="xs:string" />
+                      <xs:element name="COUNTRY" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="Entity_id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="legal_basis" type="xs:string" use="required" />
+                    <xs:attribute name="reg_date" type="xs:date" use="required" />
+                    <xs:attribute name="pdf_link" type="xs:string" use="required" />
+                    <xs:attribute name="programme" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="ADDRESS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="NUMBER" />
+                      <xs:element name="STREET" type="xs:string" />
+                      <xs:element name="ZIPCODE" type="xs:string" />
+                      <xs:element name="CITY" type="xs:string" />
+                      <xs:element name="COUNTRY" type="xs:string" />
+                      <xs:element name="OTHER" type="xs:string" />
+                    </xs:sequence>
+                    <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="Entity_id" type="xs:unsignedInt" use="required" />
+                    <xs:attribute name="legal_basis" type="xs:string" use="required" />
+                    <xs:attribute name="reg_date" type="xs:date" use="required" />
+                    <xs:attribute name="pdf_link" type="xs:string" use="required" />
+                    <xs:attribute name="programme" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="Id" type="xs:unsignedInt" use="required" />
+            <xs:attribute name="Type" type="xs:string" use="required" />
+            <xs:attribute name="legal_basis" type="xs:string" use="required" />
+            <xs:attribute name="reg_date" type="xs:date" use="required" />
+            <xs:attribute name="pdf_link" type="xs:string" use="required" />
+            <xs:attribute name="programme" type="xs:string" use="required" />
+            <xs:attribute name="remark" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Date" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
