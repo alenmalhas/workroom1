@@ -79,9 +79,9 @@ return <Square value={i} />;
         // }
 
 //        const status = 'Next player: '+ (this.state.xIsNext ? 'X' : 'O');
+//<div className="status">{status}</div>
         return (
             <div>
-                <div className="status">{status}</div>
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
@@ -156,12 +156,13 @@ class Game extends React.Component{
             const desc = move ? 
                 'Go to move #'+ move:
                 'Go to game start';
+        
+            return (
+                    <li>
+                        <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                    </li>
+                );
         });
-        return (
-            <li>
-                <button onClick={() => this.jumpTo(move)}>{desc}</button>
-            </li>
-        );
 
         let status;
         if(winner){
