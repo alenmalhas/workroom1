@@ -18,3 +18,4 @@ const Contacts = ({ contactList }) => {
   };
 
   export default Contacts
+
