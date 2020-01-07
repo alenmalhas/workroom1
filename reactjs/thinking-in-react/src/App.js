@@ -94,6 +94,7 @@ class SearchBar extends React.Component {
 }
 
 class FilterableProductTable extends React.Component {
+  
   render() {
     return (
       <div>
