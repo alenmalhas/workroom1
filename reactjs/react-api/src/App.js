@@ -11,14 +11,32 @@ class App extends Component{
   }
 
   componentDidMount(){
-    fetch('http://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(data => {
-      this.setState({contacts: data})
-    })
-    .catch(console.log)
-
+    
   }
+
+  setStateFromApiData(){
+
+    if(this.state.contacts.length === 0) 
+    {
+      fetch('http://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({contacts: data})
+      })
+      .catch(console.log)
+    }
+    else{
+      alert('Contacts already loaded');
+    }
+  }
+
+  clearContactList(){
+    this.setState({
+      contacts: []
+    });
+  }
+
+
 
 // <div class="card">
 //   <div class="card-body">
@@ -30,7 +48,11 @@ class App extends Component{
 
   render(){
     return(
-      <Contacts contactList={this.state.contacts} />
+      <div>
+        <input type="button" onClick={()=> this.setStateFromApiData()} value="Load Contacts" />
+        <input type="button" onClick={()=> this.clearContactList() } value="Clear" />
+        <Contacts contactList={this.state.contacts} />
+      </div>
     );
   }
 }
