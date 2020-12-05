@@ -1,0 +1,19 @@
+This: {"Employer":"C1","Location":"L1","start_time":3,"end_time":4,"index":1}
+Other: {"Employer":"C2","Location":"L2","start_time":3,"end_time":4,"index":0}
+---=> ComparisionValue: -1 preferSecondWhenFullMismatch: True
+
+This: {"Employer":"C2","Location":"L2","start_time":4,"end_time":5,"index":2}
+Other: {"Employer":"C2","Location":"L2","start_time":3,"end_time":4,"index":0}
+---=> ComparisionValue: 0 preferSecondWhenFullMismatch: True
+
+This: {"Employer":"C1","Location":"L1","start_time":5,"end_time":6,"index":3}
+Other: {"Employer":"C2","Location":"L2","start_time":4,"end_time":5,"index":2}
+---=> ComparisionValue: -1 preferSecondWhenFullMismatch: True
+
+This: {"Employer":"C1","Location":"L1","start_time":5,"end_time":6,"index":3}
+Other: {"Employer":"C2","Location":"L2","start_time":3,"end_time":4,"index":0}
+---=> ComparisionValue: -1 preferSecondWhenFullMismatch: True
+
+This: {"Employer":"C1","Location":"L1","start_time":5,"end_time":6,"index":3}
+Other: {"Employer":"C1","Location":"L1","start_time":3,"end_time":4,"index":1}
+---=> ComparisionValue: 0 preferSecondWhenFullMismatch: True

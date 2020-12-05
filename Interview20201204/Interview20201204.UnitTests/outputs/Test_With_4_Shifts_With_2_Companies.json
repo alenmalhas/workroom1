@@ -1,0 +1,19 @@
+This: C1 L1 this.GetHashCode: 31071611 index: 1
+Other: C2 L2 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: -1
+
+This: C2 L2 this.GetHashCode: 24004906 index: 2
+Other: C2 L2 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: 0
+
+This: C1 L1 this.GetHashCode: 45725801 index: 3
+Other: C2 L2 other.GetHashCode: 24004906 index: 2
+---=> ComparisionValue: -1
+
+This: C1 L1 this.GetHashCode: 45725801 index: 3
+Other: C2 L2 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: -1
+
+This: C1 L1 this.GetHashCode: 45725801 index: 3
+Other: C1 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: 0
