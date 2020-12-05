@@ -1,0 +1,75 @@
+This: C6 L1 this.GetHashCode: 31071611 index: 1
+Other: C2 L4 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: 1
+
+This: C3 L6 this.GetHashCode: 24004906 index: 2
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C3 L6 this.GetHashCode: 24004906 index: 2
+Other: C2 L4 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: 1
+
+This: C2 L5 this.GetHashCode: 45725801 index: 3
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 45725801 index: 3
+Other: C3 L6 other.GetHashCode: 24004906 index: 2
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 45725801 index: 3
+Other: C2 L4 other.GetHashCode: 63566392 index: 0
+---=> ComparisionValue: 1
+
+This: C4 L1 this.GetHashCode: 963711 index: 4
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C4 L1 this.GetHashCode: 963711 index: 4
+Other: C3 L6 other.GetHashCode: 24004906 index: 2
+---=> ComparisionValue: 1
+
+This: C3 L6 this.GetHashCode: 66496106 index: 5
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C3 L6 this.GetHashCode: 66496106 index: 5
+Other: C4 L1 other.GetHashCode: 963711 index: 4
+---=> ComparisionValue: -1
+
+This: C3 L6 this.GetHashCode: 66496106 index: 5
+Other: C3 L6 other.GetHashCode: 24004906 index: 2
+---=> ComparisionValue: 0
+
+This: C2 L5 this.GetHashCode: 24828593 index: 6
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 24828593 index: 6
+Other: C4 L1 other.GetHashCode: 963711 index: 4
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 24828593 index: 6
+Other: C3 L6 other.GetHashCode: 66496106 index: 5
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 24828593 index: 6
+Other: C3 L6 other.GetHashCode: 24004906 index: 2
+---=> ComparisionValue: -1
+
+This: C2 L5 this.GetHashCode: 24828593 index: 6
+Other: C2 L5 other.GetHashCode: 45725801 index: 3
+---=> ComparisionValue: 0
+
+This: C3 L6 this.GetHashCode: 35451336 index: 7
+Other: C6 L1 other.GetHashCode: 31071611 index: 1
+---=> ComparisionValue: -1
+
+This: C3 L6 this.GetHashCode: 35451336 index: 7
+Other: C4 L1 other.GetHashCode: 963711 index: 4
+---=> ComparisionValue: -1
+
+This: C3 L6 this.GetHashCode: 35451336 index: 7
+Other: C3 L6 other.GetHashCode: 66496106 index: 5
+---=> ComparisionValue: 0
