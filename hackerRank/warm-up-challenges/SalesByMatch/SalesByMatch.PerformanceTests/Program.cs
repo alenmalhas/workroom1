@@ -9,9 +9,7 @@ namespace SalesByMatch.PerformanceTests
     {
         public static void Main(string[] args)
         {
-            var config = DefaultConfig.Instance
-                //.With(ConfigOptions.DisableOptimizationsValidator);
-                .WithOptions(ConfigOptions.DisableOptimizationsValidator);
+            var config = DefaultConfig.Instance.WithOptions(ConfigOptions.DisableOptimizationsValidator);
             var summary = BenchmarkRunner.Run<SockMerchantTests>(config);
             //var summary = BenchmarkRunner.Run<SockMerchantTests>();
         }
